@@ -1,0 +1,1624 @@
+/* ----- This document was written by ZOGMADDOG ----- */
+/* ----- It is available for public use to include changes and redistribution ----- */
+/*
+
+
+$$$$$$$$\ $$\      $$\ $$$$$$$\  
+\____$$  |$$$\    $$$ |$$  __$$\ 
+    $$  / $$$$\  $$$$ |$$ |  $$ |
+   $$  /  $$\$$\$$ $$ |$$ |  $$ |
+  $$  /   $$ \$$$  $$ |$$ |  $$ |
+ $$  /    $$ |\$  /$$ |$$ |  $$ |
+$$$$$$$$\ $$ | \_/ $$ |$$$$$$$  |
+\________|\__|     \__|\_______/ 
+
+
+*/
+/*--------------------------*/
+/* ------   Fonts   ------- */
+/* -------------------------*/
+
+/* Iceland */
+@font-face {   /* adds a font useable anywhere in the CSS */
+  font-family: Iceland;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/iceland/v8/rax9HiuFsdMNOnWPaKtMAQ.woff2) ;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Iceland */
+
+/* Electrolize */
+@font-face {
+  font-family: Electrolize;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  url(https://fonts.gstatic.com/s/electrolize/v8/cIf5Ma1dtE0zSiGSiED7AXEBuI8.woff2) ;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Electrolize */
+
+/*--------------------------*/
+/* ------   Fonts   ------- */
+/* -------------------------*/
+
+
+
+/*--------------------------*/
+/* ----   Animations   ---- */
+/* -------------------------*/
+
+/*added*/
+/* links animation */
+@keyframes linksforfun {   /* this creates an animation that tells the website to change font color; it starts at 80% opacity and decreases to 60% */
+  from {color: rgba(0, 255, 255, .8); text-shadow: 0px 1px 4px rgba(0, 255, 255, .6);}
+  to {color: rgba(0, 255, 255, .6);}
+}
+/* links animation */
+
+/* desktop background animation */
+@keyframes background-desktop {   /* this creates an animation that tells the backrgound to move; it will shift the background 600 pixels to the top in a single cycle */
+	from { background-position: 0 0; }
+	to { background-position: 0 -600px; }
+}
+
+@keyframes background-desktop-meta {
+	from { background-position: 0 0; }
+	to { background-position: 0 -600px; }
+}
+/* desktop background animation */
+
+/* mobile background animation */
+@keyframes background-mobile {
+	from { background-position: 0 0; }
+	to { background-position: 0 -300px; }
+}
+
+@keyframes background-mobile-meta {
+	from { background-position: 0 0; }
+	to { background-position: 0 300px; }
+}
+/* mobile background animation */
+
+/*Fancy Border Animation*/
+
+@keyframes topanimation {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+} 
+
+@keyframes leftanimation {
+  0% {
+  transform:scaleY(0);
+  transform-origin: bottom;
+  }
+  50%
+  {
+    transform:scaleY(1);
+  transform-origin: bottom;
+  }
+  50.1%
+  {
+    transform:scaleY(1);
+  transform-origin: top;
+    
+  }
+  
+  100%
+  {
+    transform:scaleY(0);
+  transform-origin: top;
+    
+  }
+} 
+/*Fancy border animation*/
+
+/*--------------------------*/
+/* ----   Animations   ---- */
+/* -------------------------*/
+
+
+
+/* -------------------------- */
+/* ------   Global   -------- */
+/* -------------------------- */
+
+
+
+/* ///Page + Article Background/// */
+.user-css-presentation {   /*this affects the overall background of the world*/
+background: url(https://www.worldanvil.com/uploads/images/1d35aa77368b1f5d09934f97ab520ca3.jpg);
+background-size: 50%;
+background-attachment: fixed;   /*this locks the image on the screen; it wont scroll*/
+}
+
+ .user-css.page,
+.user-css-extended .page {   /*this affects the large page container*/
+   background: url(https://www.worldanvil.com/uploads/images/c39712112e087c258df312b19c4d1081.png);
+   background-size: 600px;
+   background-clip: padding-box;
+   background-position: center;
+   background-repeat: repeat;
+   animation: background-desktop 10s linear infinite; /*this tells the background to follow a predetermined animation over the duration of 10s for an infinite amount of loops*/
+   box-shadow: 0px 0px 0px;
+   overflow: auto;
+   max-height: 800px;
+   padding: 50px;
+   border-image-source: url(https://www.worldanvil.com/uploads/images/2b88f3db8d33b709acdd1dc47b585096.png);
+   border-image-slice: 20; /*complicated magic that lets you use custom borders. If you can explain this to me please help.*/
+   border-image-repeat: repeat;
+   border-width: 20px;
+   border-style: solid;
+   border-image-outset: 0px;
+}
+/* ///Page + Article Background/// */
+
+
+
+/* ///Font Styling Global/// */
+.user-css {
+   color: rgba(0, 255, 255, .7);   /*changes the color of associated text*/
+   font-family: Iceland, cursive;   /*changes the font of associated text*/
+   font-size: 15px;   /*changes the font size of associated text*/
+   line-height: 1.5;   /*changes the line spacing of associated text*/
+}
+
+
+.user-css-extended {
+   color: rgba(0, 255, 255, .7);
+   font-family: Iceland, cursive;
+   font-size: 15px;
+   line-height: 1.5;
+}
+/* ///Font Styling Global/// */
+
+
+
+/* ///Font Styling H1/// */
+.user-css h1 {
+   font-family: Iceland, cursive;
+   font-size: 65px;
+   color: rgba(0, 255, 255, .6);
+}
+
+
+.user-css-extended h1 {
+   font-family: Iceland, cursive;
+   font-size: 65px;
+   color: rgba(0, 255, 255, .6);
+}
+/* ///Font Styling H1/// */
+
+
+
+/* ///Font Styling H2/// */
+.user-css h2 {
+   text-align: left;   /*aligns the text (left/right/center)*/
+   font-size: 35px;
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .6);   /*gives associated text a shadow; (left/right) (top/bottom) (shadow size) (color)*/
+   margin-bottom: 5px;
+   padding: 0px;
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: rgba(0, 255, 255, .6);
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+}
+
+
+.user-css-extended h2 {
+   text-align: left;
+   font-size: 35px;
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .6);
+   margin-bottom: 5px;
+   padding: 0px;
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: rgba(0, 255, 255, .6);
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+}
+/* ///Font Styling H2/// */
+
+
+
+/* ///Font Styling H3/// */
+.user-css h3 {
+   text-align: left;
+   font-size: 35px;
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .6);
+   margin-bottom: 5px;
+   padding: 0px;
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+}
+
+
+.user-css-extended h3 {
+   text-align: left;
+   font-size: 35px;
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .6);
+   margin-bottom: 5px;
+   padding: 0px;
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+}
+/* ///Font Styling H3/// */
+
+
+
+/* ///Font Styling/// H4 */
+.user-css h4 {
+   text-align: left;
+   font-size: 25px;
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .6);
+   margin-bottom: 0px;
+   padding: 0px;
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+}
+
+
+.user-css-extended h4 {
+   text-align: left;
+   font-size: 25px;
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .6);
+   margin-bottom: 0px;
+   padding: 0px;
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+}
+/* ///Font Styling H4/// */
+
+
+
+/* ///Font Styling H5/// */
+.user-css h5 {
+   text-align: left;
+   font-size: 25px;
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .6);
+   margin-bottom: 0px;
+   padding: 0px;
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+}
+
+
+.user-css-extended h5 {
+   text-align: left;
+   font-size: 25px;
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .6);
+   margin-bottom: 0px;
+   padding: 0px;
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+}
+/* ///Font Styling H5/// */
+
+
+
+/* ///Spans/// */   /*don't remember what is considered span but I wrote it for a reason*/
+.user-css span {
+   font-family: Iceland, cursive;
+   color: rgba(0, 255, 255, .6);
+}
+
+
+.user-css-extended span {
+   font-family: Iceland, cursive;
+   color: rgba(0, 255, 255, .6);
+}
+/* ///Spans/// */
+
+
+
+/* ///Font Styling Links/// */
+.user-css a {
+   font-family: Electrolize, cursive;
+   font-size: 16px;
+   color: rgba(0, 255, 255, .6);
+   animation: linksforfun 2.0s infinite;
+}
+
+
+.user-css a:hover{  /*adding :hover following the container will allow editing of hover characteristics. The following line increases the opacity of links when hovered over*/ 
+   color: rgba(0, 255, 255, .8);
+}
+
+
+.user-css-extended a {
+   font-family: Electrolize, cursive;
+   font-size: 16px;
+   color: rgba(0, 255, 255, .6);
+   animation: linksforfun 2.0s infinite;
+}
+
+
+.user-css-extended a:hover{
+   color: rgba(0, 255, 255, .8);
+}
+/* ///Font Styling Links/// */
+
+
+
+/* ///Font Styling Homepage Followers/// */
+.user-css-followers-counter-number a {
+   font-size: 18px;
+}
+/* ///Font Styling Homepage Followers/// */
+
+
+
+/* ///Icons/// */
+.user-css i {
+   color: rgba(0, 255, 255, .6);
+}
+
+
+.user-css-extended i {
+   color: rgba(0, 255, 255, .6);
+}
+/* ///Icons/// */
+
+
+
+/* ///Horizontal Rule Styling/// */
+.user-css hr{
+   border-top: 2px solid;
+   border-top-color: rgba(0, 255, 255, .6);
+}
+/* ///Horizontal Rule Styling/// */
+
+
+
+/* Scrollbar Styling */
+/*these lines allow you to make custom scroll bars for your world*/
+.user-css.page::-webkit-scrollbar {   /*the scrollbar for inside the main container (not the scrollbar for the entire page*/
+   width: 7px;
+}
+
+.user-css.page::-webkit-scrollbar-track {   /*the track*/
+   background: rgba(0, 255, 255, .1);
+}
+
+.user-css.page::-webkit-scrollbar-thumb {   /*the scrolly bit, aka thumb*/
+   background: rgba(0, 255, 255, .3);
+   border-radius: 5px;
+}
+
+.user-css.page::-webkit-scrollbar-thumb:hover {   /*the thumb when hovered over*/
+   background: rgba(0, 255, 255, .6);
+}
+
+.user-css-presentation .page::-webkit-scrollbar {   /*the scrollbar for the comments container*/
+   width: 7px;
+}
+
+.user-css-presentation .page::-webkit-scrollbar-track {   /*the track for the comments container*/
+   background: rgba(0, 255, 255, .1);
+}
+
+.user-css-presentation .page::-webkit-scrollbar-thumb {   /*the thumb for the comments container*/
+   background: rgba(0, 255, 255, .3);
+   border-radius: 5px;
+}
+
+.user-css-presentation .page::-webkit-scrollbar-thumb:hover {   /*the thumb for the comments container when hovered over*/
+   background: rgba(0, 255, 255, .6);
+}
+
+.user-css-presentation div#world-navigation-sidebar::-webkit-scrollbar {   /*the scrollbar for the navigation sidebar container*/
+   width: 7px;
+}
+
+.user-css-presentation div#world-navigation-sidebar::-webkit-scrollbar-track {   /*the track for the navigation sidebar container*/
+   background: rgba(0, 255, 255, .1);
+}
+
+.user-css-presentation div#world-navigation-sidebar::-webkit-scrollbar-thumb {   /*the thumb for the navigation sidebar container*/
+   background: rgba(0, 255, 255, .3);
+   border-radius: 5px;
+}
+
+.user-css-presentation div#world-navigation-sidebar::-webkit-scrollbar-thumb:hover {   /*the thumb for the navigation sidebar container when hovered over*/
+   background: rgba(0, 255, 255, .6);
+}
+/* Scrollbar Styling */
+
+
+
+/* Navigation Sidebar */
+.user-css-presentation div#world-navigation-sidebar { /*the sidebar itself*/
+   background: url(https://www.worldanvil.com/uploads/images/c39712112e087c258df312b19c4d1081.png);
+   background-clip: padding-box;
+   background-color: rgba(0, 200,200,.0);
+   border-image-source: url(https://www.worldanvil.com/uploads/images/2b88f3db8d33b709acdd1dc47b585096.png);
+   border-image-slice: 20;
+   border-image-repeat: stretch;
+   border-width: 20px;
+   border-style: solid;
+   border-image-outset: 0px;
+   max-width: none;
+   width: 1500px;
+   left: -1200px;
+   padding-left: 1200px;
+   box-shadow: none;
+}
+
+.user-css-presentation div#world-navigation-sidebar i{   /*icons in the sidebar*/
+   color: rgba(0,255,255, .6)
+}
+
+.user-css#world-navigation-sidebar[style^=display] {   /*the sidebar while closed*/
+    left: -1480px !important; /*this is so mine slides in and out, instead of just appearing*/
+    display: block !important;
+    transition: left 1.8s; /*this is so mine slides in and out, instead of just appearing*/
+}
+
+#world-navigation-sidebar {   /*sidebar position when open*/
+    display: block!important;
+    transition: left 1s; /*this is so mine slides in and out, instead of just appearing*/
+}
+
+.user-css-presentation .world-navigation-palette-trigger-inactive {   /*the sidebar button when closed*/
+   left: 13px;
+   transition: left 1.8s;
+   background: rgba(0, 255, 255, .15);
+   border: 3px solid rgba(0,255,255,.6);
+   border-radius: 3px;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-inactive i{   /*the small icon in the sidebar button when closed*/
+   color: rgba(0,0,0,0);
+   font-size: 0px;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-active {   /*the sidebar button when open*/
+   left: 293px;
+   transition: left 1s;
+   background: rgba(0, 255, 255, .15);
+   border: 3px solid rgba(0,255,255,.6);
+   border-radius: 3px;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-active i{   /*the small icon in the sidebar button when opened*/
+   color: rgba(0,0,0,0);
+   font-size: 0px;
+}
+/* Navigation Sidebar */
+
+
+
+/* ///World Title Box/// */
+.user-css .world-title {   /*In order to design my own animated title for the world homepage, I first hid the actual title by reducing the opacity to 0. I then drew a gif of the animated title. Then, in the container where the title sits, I made the background the aforementioned gif. Boom bada bang animated title.*/
+   font-size: 75px;
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .0);
+   margin-top: 45px;
+   margin-bottom: 0px;
+   padding: 30px;
+   background: url(https://www.worldanvil.com/uploads/images/8f558a520891ad67a01d021636f931db.gif);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   color: rgba(0, 100, 100, .0);
+}
+
+.user-css div.author-item.world-author {   /*the world author text on the main page*/
+   padding-top: 0px;
+}
+/* ///World Title Box/// */
+
+
+
+/* World Row */
+/* unused in Perillel*/
+.user-css.page-world-homepage div.world-content {   /*a container surrounding all of the sections of the main world page*/
+
+}
+
+/*timelines header*/
+.user-css .timelines-list-header {   /*hides the timelines header and makes the container effectively disappear*/
+   visibility: hidden;
+   height: 0px;
+   width: 0px;
+}
+
+/* This code turns the article lists into a 2x2 grid (doesn't work for mobile) - unused in Perillel
+.user-css div.world-featured-articles ul.article-list li{
+   width: 50%;
+   float: left;
+}
+
+.user-css div.world-recent-articles ul.article-list li{
+   width: 50%;
+   float: left;
+}
+
+.user-css div.world-recent-articles h2{
+   float: left;
+}
+*/
+/* World Row */
+
+
+
+/* World Table of Contents */
+.user-css div.followers-counter div.panel {   /*the followers panel on the main page*/
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+   font-size: 20px;
+}
+/* World Table of Contents */
+
+
+
+/* Homepage Map Panel */
+.user-css li.map-box.map-item{   /*the box surrounding the map and title*/
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   padding: 3px;
+}
+
+.user-css .map-box .img-responsive{   /*the image of the map*/
+   background: rgba(0, 0, 0, .2);
+}
+
+.user-css li.map-box.map-item div small{   /*a box surrounding just the title*/
+   font-family: Iceland, cursive;
+   font-size: 23px;
+   color: rgba(0, 255, 255, .6);
+   text-shadow: 0px 2px 4px rgba(0, 200, 200, .3);
+   padding: 0px;
+}
+/* Homepage Map Panel */
+
+
+
+/* Spoilers */
+.user-css a.btn.btn-sm.btn-primary.spoiler-button[aria-expanded=true] {   /*unsure exactly what this is doing*/
+   border-bottom: 1px solid;
+   transition: 0s;
+}
+
+.user-css a.btn.btn-sm.btn-primary.spoiler-button{   /*the button when the spoiler is toggled open*/
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   border-radius: 0px;
+   border-bottom: 4px solid;
+   width: 100%;
+   height: auto;
+   text-shadow: 0px 3px 3px rgba(0, 165, 165, .8);
+   font-family: Iceland, cursive;
+   font-size: 18px;
+   color: rgba(0, 255, 255, .6)!important;
+   margin-bottom: 0px;
+   white-space: normal;
+   transition: 1s;   /*transition can be used to create psuedo-animations where the website will change between two states over a period of time. in this case, the state is when the spoiler opens or closes*/
+}
+
+.user-css a.btn.btn-sm.btn-primary.spoiler-button.collapsed{   /*the button when the spoiler is toggled closed*/
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   border-bottom: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+   text-shadow: 0px 3px 3px rgba(0, 165, 165, .8);
+   font-family: Iceland, cursive;
+   font-size: 18px;
+   color: rgba(0, 255, 255, .6)!important;
+   white-space: normal;
+   transition: .2s;
+}
+
+.user-css div.well.spoiler-content{   /*the content of the spoiler*/
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   border-top: none;
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
+   font-family: Electrolize, cursive;
+   font-size: 14px;
+   color: rgba(0, 255, 255, .6)!important;
+}
+/* Spoilers */
+
+
+
+/* Article Title Box */
+/*unused in Perillel*/
+.user-css div.col-md-12.article-title {   /*a box surrounding article titles*/
+
+}
+/* Article Title Box */
+
+
+
+/* col-sm-x boxes */
+/*this is a way to globally affect all of your custom bbcode containers, depending on how you create them*/
+/*unused in Perillel*/
+.user-css div.col-sm-4 {
+
+}
+
+.user-css div.col-sm-6 {
+
+}
+
+.user-css div.col-sm-8 {
+
+}
+
+.user-css div.col-sm-12 {
+
+}
+
+.user-css div.col-sm-12 h5 {
+
+}
+/* col-sm-x boxes */
+
+
+
+/* Pseudo-elements */
+/* allows for customization of psuedo elements when paired with noted bbcode */
+/* bbcode: [container:sidemarker] whatever you want [/container] */
+/*
+.user-css .sidemarker {
+content: url();
+position: absolute;
+width: 3px;
+height: 100%;
+top: 0;
+right: 0;
+background: black;
+box-shadow: whatever you want your box shadow to be;
+}
+*/
+/* Pseudo-elements */
+
+
+
+/* ///Quote Boxes/// */
+.user-css blockquote {
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+   font-size: 20px;
+}
+
+
+.user-css blockquote h3 .text-center{
+   color: rgba(0, 255, 255, .7);
+   font-family: Iceland, cursive;
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 1.3em;
+}
+/* ///Quote Boxes/// */
+
+
+
+/* ///Sidebar + Panels Boxes/// */
+.user-css div.panel {
+   color: rgba(0, 255, 255, .6);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+   background: rgba(0, 255, 255, .15);
+   box-shadow: 0px 3px 4px rgba(0, 255, 255, .4);
+   border: 3px solid rgba(0,255,255,.2);
+   border-radius: 9px;
+}
+/* ///Sidebar + Panels Boxes/// */
+
+
+
+/* ///Search Bar/// */
+/*The search bar is a complicated mess to work on. I recommend just copying what I have below and slowly working out what each block is doing.*/
+.user-css .search-form {   /*where the search bar sits*/
+   margin: 0px;
+   margin-left: 0px;
+   margin-top: 10px;
+   left: auto;
+}
+
+
+.user-css .typeahead-input{   /*what is typed in the search bar*/
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+   border: 3px solid rgba(0, 255, 255, .2);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   background: rgba(0, 255, 255, .15);
+}
+
+.user-css .search-form:focus{   /*I dont even know*/
+   outline: unset;
+}
+
+.user-css .form-group:focus{   /*this either*/
+   outline: unset;
+}
+
+
+.user-css .typeahead-input:focus{   /*gives the search bar a shadow when typing inside it (focus)*/
+   outline: unset;
+   border-color: rgba(0, 255, 255, .5);
+}
+
+
+.user-css .typeahead-input::placeholder{   /*the "search" inside the search bar when empty*/
+   color: rgba(0, 255, 255, .6);
+   opacity: 60%;
+}
+
+
+.user-css #search-button.btn.btn-link {   /*the magnifying glass*/
+   color: rgba(0, 255, 255, .6);
+   font-family: Iceland, cursive;
+   opacity: 60%;
+}
+
+
+.user-css .typeahead.dropdown-menu {   /*the dropdown menu (and some associated text, I think?)*/
+   color: rgba(0, 255, 255, .6);
+   background: rgba(0, 255, 255, .15);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border: 4px solid rgba(0,255,255,.4);
+   border-radius: 3px;
+   border-color: rgba(0, 255, 255, .5);
+}
+
+
+.user-css .typeahead .dropdown-item {   /*individual dropdown items*/
+   color: rgba(0, 255, 255, .6);
+}
+
+
+.user-css .typeahead a.dropdown-item{   /*removes the white background from hovered selections, can also be used to add effects*/
+   background: unset;
+}
+
+.user-css .typeahead .text-muted {   /*the font color in the dropdown menu when not hovered*/
+   color: rgba(0, 255, 255, .5);
+}
+
+.user-css .typeahead .active .text-muted {   /*the font color in the dropdown menu when hovered*/
+   color: rgba(0, 255, 255, .6);
+}
+/* ///Search Bar/// */
+
+
+
+/* Back To World Bar */
+.user-css .backtoworld a{
+   font-family: Iceland, cursive;
+   background-color: rgba(0, 255, 255, .15);
+   border: 3px solid rgba(0, 255, 255, .2);
+   box-shadow: 0px 3px 5px rgba(0, 102, 102, .8);
+   margin-left: 15px;
+   left: 0px;
+   top: 15px;
+   border-radius: 3px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+}
+
+
+.user-css .backtoworld a:hover{
+   color: rgba(0, 255, 255, .7);
+   background-color: rgba(0, 255, 255, .15);
+   border-color: rgba(0, 255, 255, .5);
+   text-shadow: 0px 3px 3px rgba(0, 255, 255, .5);
+}
+/* Back To World Bar */
+
+
+
+/* Twitch Icon */
+/*allows you to somewhat customize the twitch icon; same concept works on the other icons as well*/
+.user-css i.fab.fa-twitch {   /*twicth icon normal*/
+   width: auto;
+   height: auto;
+   padding: 4px;
+   background: rgba(0, 255, 255, .15);
+   border: 3px solid rgba(0,255,255,.2);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 3px;
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   color: rgba(0, 255, 255, .6);
+   animation: linksforfun 2.0s infinite;
+}
+
+
+.user-css i.fab.fa-twitch:hover {   /*twitch icon while hovered*/
+   border-color: rgba(0,255,255,.5);
+}
+/* Twitch Icon */
+
+
+
+/* Metadata + OrgTree */
+/*this large section takes care of everything in the metadata and organizational tree container at the bottome of the page*/
+/*side note: editing this section takes a lot of effort and you'll see a lot of duplicate code*/
+/*side side note: if anyone knows an easier way to do all of this, please let me know*/
+.user-css-extended .nav-tabs a{   /*the metadata and orgtree tabs, before selected*/
+   margin: 5px;
+   background: rgba(0, 255, 255, .15);
+   border: 3px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 3px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Electrolize, cursive;
+}
+
+
+.user-css-extended .nav-tabs a:hover{   /*when the metadata and orgtree tabs are hovered over*/
+   margin: 5px;
+   background: rgba(0, 255, 255, .15);
+   border: 3px solid rgba(0,255,255,.5);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .5);
+   border-radius: 3px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Electrolize, cursive;
+}
+
+
+.user-css-extended .nav-tabs .active a{   /*when the tabs are active and not hovered over*/
+   margin: 5px;
+   background: rgba(0, 255, 255, .15);
+   border: 3px solid rgba(0,255,255,.5);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .5);
+   border-radius: 3px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Electrolize, cursive;
+}
+
+
+.user-css-extended .nav-tabs .active a:focus{   /*when the tabs are active and focused(??)*/
+   margin: 5px;
+   background: rgba(0, 255, 255, .15);
+   border: 3px solid rgba(0,255,255,.5);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .5);
+   border-radius: 3px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Electrolize, cursive;
+}
+
+
+.user-css-extended .nav-tabs .active a:hover{   /*when the tabs are active and hovered over*/
+   margin: 5px;
+   background: rgba(0, 255, 255, .15);
+   border: 3px solid rgba(0,255,255,.5);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .5);
+   border-radius: 3px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Electrolize, cursive;
+}
+
+.user-css-extended .tab-content .col-md-12 .row{   /*the metadata and organization tree box*/
+   margin: 5px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Electrolize, cursive;
+}
+/* Metadata + OrgTree */
+
+
+
+/* Comments */
+.user-css-extended h2 {   /*the word "comments"*/
+   margin: 5px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+}
+
+/* unused for Perillel*/
+.user-css-extended .col-md-8 {   /*a box that surrounds all the comments + the leave comment button*/
+
+}
+
+.user-css-extended .form-control {   /*the comment form box*/
+   margin: 5px;
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Electrolize, cursive;
+}
+
+.user-css-extended .comment-box {   /*the actual comments left by people*/
+   margin: 5px;
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+}
+
+.user-css-extended .btn-primary {   /*the "leave comment" button when not hovered over*/
+   margin: 5px;
+   margin-bottom: 15px;
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   color: rgba(0, 255, 255, .7)!important;
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+}
+
+.user-css-extended .btn-primary:hover {   /*the "leave comment" button when hovered over*/
+   margin: 5px;
+   margin-bottom: 15px;
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.5);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   color: rgba(0, 255, 255, .8)!important;
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+}
+/* Comments */
+
+
+
+/* Article Panel */
+/*these are the boxes that appear in your "featured article" section on your main page*/
+.user-css div.article-panel {   /*the box itself*/
+   margin: 5px;
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+}
+
+.user-css .article-panel .details h5{   /*the title (only need to change color with these next few as far as I can tell)*/
+   color: rgba(0, 255, 255, .7);
+}
+
+.user-css .article-panel .details .subheading{   /*type of article*/
+   color: rgba(0, 255, 255, .7);
+}
+
+.user-css .article-panel .details .subheading .date{   /*date published*/
+   color: rgba(0, 255, 255, .7);
+}
+/* Article Panel */
+
+
+
+/* Follower Page */
+.user-css.page-followers .nav-strip {   /*the large "go to world homepage" bar*/
+   background: unset;
+   border: unset;
+   box-shadow: unset;
+   border-radius: unset;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+}
+
+.user-css.page-followers .nav-strip a:hover{   /*the words "go to world homepage" when hovered over*/
+   font-size: 16px;
+}
+
+
+
+.user-css.page-followers .follower-box{   /*the box with with the followers name and picture*/
+   background: rgba(0, 255, 255, .15);
+   border: 4px solid rgba(0,255,255,.4);
+   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+   border-radius: 4px;
+   color: rgba(0, 255, 255, .7);
+   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);
+   font-family: Iceland, cursive;
+   font-size: 20px;
+}
+/* Follower Page */
+
+
+
+/* Tooltip */
+/*honestly, i have no idea how this actually works. i just keep trying stuff until eventually it looks good. forgive me.*/
+.user-css .tooltip.top .tooltip-arrow,
+.user-css-extended .tooltip.top .tooltip-arrow,
+.user-css-worldmenu .tooltip.top .tooltip-arrow {
+   border-top-color: rgba(0, 155, 155, .6);
+}
+
+.user-css .tooltip.left .tooltip-arrow,
+.user-css-extended .tooltip.left .tooltip-arrow,
+.user-css-worldmenu .tooltip.left .tooltip-arrow {
+   border-top-color: rgba(0, 155, 155, .6);
+}
+
+.user-css .tooltip.bottom .tooltip-arrow,
+.user-css-extended .tooltip.bottom .tooltip-arrow,
+.user-css-worldmenu .tooltip.bottom .tooltip-arrow {
+   border-top-color: rgba(0, 155, 155, .6);
+}
+
+.user-css .tooltip.right .tooltip-arrow,
+.user-css-extended .tooltip.right .tooltip-arrow,
+.user-css-worldmenu .tooltip.right .tooltip-arrow {
+   border-top-color: rgba(0, 155, 155, .6);
+}
+
+.user-css .tooltip .tooltip-inner,
+.user-css-extended .tooltip .tooltip-inner,
+.user-css-worldmenu .tooltip .tooltip-inner {
+   background: rgba(0, 80, 80, 1);
+   border-color: rgba(0, 155, 155, .0);
+   border: solid 2px;
+   color: rgba(0, 255, 255, .7);
+   font-size: 20px;
+   font-family: Iceland, cursive;
+}
+
+.user-css .text-abbreviation {
+   border: 1px rgba(0,255,255,.6) solid;
+   padding-left: 2px;
+   padding-right: 2px;
+   background: rgba(0,155,155,.2);
+}
+
+.user-css-presentation .tooltipster-box {
+   background: rgba(0,100,100,.8)!important;
+   border-color: rgba(0, 255, 255, .4)!important;
+   border: solid 2px!important;
+   color: rgba(0, 255, 255, .4)!important;
+}
+
+.user-css-presentation .tooltipster-content{
+   color: rgba(0, 255, 255, .8)!important;
+   font-family: Iceland, cursive;
+   font-size: 16px;
+   line-height: 1.3;
+}
+
+.user-css-presentation .tooltipster-arrow-border{
+   border-top-color: rgba(0, 255, 255, .4)!important;
+}
+/* Tooltip */
+
+
+
+/* Map Page */
+/* this all changes the look of the map page specifically, since it is completely separate from the rest of the css -_- */
+.map-context-user-css{   /*the map page background*/
+   background: url(https://www.worldanvil.com/uploads/images/1d35aa77368b1f5d09934f97ab520ca3.jpg);
+}
+
+.user-css-map-sidebar {   /*the sidebar for the map page. to be honest, this is a mess but i couldn't be bothered to simplify this anymore. the map page doesn't use that much code anyways.*/
+   position: fixed;
+   background: url(https://www.worldanvil.com/uploads/images/c39712112e087c258df312b19c4d1081.png);
+   background-size: 600px;
+   background-clip: padding-box;
+   background-position: center;
+   background-repeat: repeat;
+   animation: background-desktop 10s linear infinite;
+   border-image-source: url(https://www.worldanvil.com/uploads/images/2b88f3db8d33b709acdd1dc47b585096.png);
+   border-image-slice: 20;
+   border-image-repeat: stretch;
+   border-width: 20px;
+   border-style: solid;
+   border-image-outset: 0px;
+   max-width: none!important;
+   width: 1500px;
+   padding-left: 980px;
+   padding-right: 20px;
+   padding-top: 50px;
+   box-shadow: none;
+   z-index: 1000!important;
+   left: -980px;
+   transition: .6s;   /*adds a transition between open and closed*/
+}
+
+.user-css-map-sidebar.active {   /*adds a transition between closed to open*/
+   transition: 1s;
+}
+
+.user-css-map-sidebar hr {
+   border-color: rgba(0, 255, 255, .6);
+}
+
+.user-css-map-sidebar h3.world-world {
+   font-family: Iceland, cursive;
+   font-size: 38px;
+   color: rgba(0, 255, 255, .6);
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .4);
+}
+
+.user-css-map-sidebar h1.map-title {
+   font-family: Iceland, cursive;
+   font-size: 52px;
+   color: rgba(0, 255, 255, .6);
+   text-shadow: 0px 5px 5px rgba(0, 100, 100, .4);
+}
+/* Map Page */
+
+
+/* Fancy border */
+/*requires some special BBCODE to function - see https://www.worldanvil.com/w/perillel-zogmaddog/a/grady-s-hill-landmark?preview=true spans fancy_border...*/
+/*The BBCODE I used
+[row]
+[container:col-sm-1]
+[/container]
+[container:fancy_border_box]
+[container:fancy_border_content]
+Where you will type all the goodies
+[section:fancy_border_top]
+
+[/section]
+[section:fancy_border_left]
+
+[/section]
+[section:fancy_border_right]
+
+[/section]
+[section:fancy_border_bottom]
+
+[/section]
+[/container]
+[/container]
+[container:col-sm-1]
+[/container]
+[/row]
+*/
+
+.user-css div.fancy_border_content{
+  width: 83.33333333%;
+  height: inherit;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.user-css span.fancy_border_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  content: normal;
+  position: absolute;
+  width:100%;
+  height: 3px;
+  background: rgba(0, 255, 255, .6);
+  animation: topanimation 8s linear infinite;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, .6);
+}
+
+.user-css .fancy_border_top:before {
+
+}
+
+.user-css .fancy_border_bottom {
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+  left: 0;
+  display: block;
+  box-sizing: border-box;
+  transform: rotate(180deg);
+  content: " ";
+  width:100%;
+  height: 3px;
+  background: rgba(0, 255, 255, .6);
+  animation: bottomanimation 8s linear infinite;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, .6);
+}
+
+.user-css .fancy_border_bottom:before {
+
+}
+
+.user-css .fancy_border_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  transform: rotate(0deg);
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: rgba(0, 255, 255, .6);
+  animation: leftanimation 8s linear infinite;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, .6);
+}
+
+.user-css .fancy_border_left:before {
+
+}
+
+.user-css .fancy_border_right {
+  position: absolute;
+  top: 0%;
+  left: auto;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 0%;
+  display: block;
+  box-sizing: border-box;
+  transform: rotate(180deg);
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: rgba(0, 255, 255, .6);
+  animation: rightanimation 8s linear infinite;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, .6);
+}
+
+.user-css .fancy_border_right:before {
+
+}
+
+@keyframes topanimation {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+}
+
+@keyframes bottomanimation {
+  0% {
+  transform:scaleX(0);
+  transform-origin: right;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+    
+  }
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: left;
+    
+  }
+}
+
+@keyframes leftanimation {
+  0% {
+  transform:scaleY(0);
+  transform-origin: bottom;
+  }
+  50%
+  {
+    transform:scaleY(1);
+  transform-origin: bottom;
+  }
+  50.1%
+  {
+    transform:scaleY(1);
+  transform-origin: Top;
+    
+  }
+  
+  100%
+  {
+    transform:scaleY(0);
+  transform-origin: top;
+    
+  }
+} 
+
+@keyframes rightanimation {
+  0% {
+  transform:scaleY(0);
+  transform-origin: top;
+  }
+  50%
+  {
+    transform:scaleY(1);
+  transform-origin: top;
+  }
+  50.1%
+  {
+    transform:scaleY(1);
+  transform-origin: bottom;
+    
+  }
+  
+  100%
+  {
+    transform:scaleY(0);
+  transform-origin: bottom;
+    
+  }
+} 
+
+/* Fancy border */
+
+
+/* -------------------------- */
+/* -------   Global   ------- */
+/* -------------------------- */
+
+
+
+/*--------------------------*/
+/* ------   Mobile   ------ */
+/* -------------------------*/
+/*creating a separate mobile section of your code gives you the option of optimizing your world for mobile viewing.*/
+/*normally you'd want the mobile section to be first, since you are expecting most mobile users to be using their cellular data*/
+/*in the case of this css, i designed it so that everything between the desktop and mobile version is interchangable. all i had to do was update the size of fonts and some images*/
+/*if it doesn't load right away, it wont break the mobile viewing experience, it will just look a little big*/
+
+
+/*Only affects phones (small screens)*/
+@media only screen and (max-width: 500px) {
+	
+/* ///Page + Article Background/// */
+.user-css-presentation {   /*this affects the overall background of the world*/
+background: url(https://www.worldanvil.com/uploads/images/1d35aa77368b1f5d09934f97ab520ca3.jpg);
+background-size: 120%;
+background-attachment: fixed;   /*this locks the image on the screen; it wont scroll*/
+}
+
+ .user-css.page,
+.user-css-extended .page {   /*this affects the large page container*/
+    background: url(https://www.worldanvil.com/uploads/images/c39712112e087c258df312b19c4d1081.png);
+   background-size: 300px;
+   background-clip: padding-box;
+   background-position: center;
+   background-repeat: repeat;
+   animation: background-mobile 10s linear infinite;
+    box-shadow: 0px 0px 0px;
+   overflow: auto;
+   overflow-x: hidden;
+   max-height: 500px;
+   padding: 50px;
+   border-image-source: url(https://www.worldanvil.com/uploads/images/2b88f3db8d33b709acdd1dc47b585096.png);
+   border-image-slice: 20;
+   border-image-repeat: stretch;
+   border-width: 20px;
+   border-style: solid;
+   border-image-outset: 0px;
+}
+/* ///Page + Article Background/// */
+
+/* ///Font Styling Global/// */
+.user-css {
+   font-size: 14px;
+   line-height: 1.2;
+}
+
+
+.user-css-extended {
+   font-size: 14px;
+   line-height: 1.2;
+}
+/* ///Font Styling Global/// */
+
+
+
+/* ///Font Styling H1/// */
+.user-css h1 {
+   font-size: 35px;
+   line-height: 1.3;
+   margin-top: 30px;
+}
+
+
+.user-css-extended h1 {
+   font-size: 35px;
+   line-height: 1.3;
+   margin-top: 30px;
+}
+/* ///Font Styling H1/// */
+
+
+
+/* ///Font Styling H2/// */
+.user-css h2 {
+   font-size: 28px;
+   margin-bottom: 3px;
+   line-height: 1.2;
+   margin-top: 10px;
+}
+
+
+.user-css-extended h2 {
+   font-size: 28px;
+   margin-bottom: 3px;
+   line-height: 1.2;
+   margin-top: 10px;
+}
+/* ///Font Styling H2/// */
+
+
+
+/* ///Font Styling H3/// */
+.user-css h3 {
+   font-size: 21px;
+   margin-bottom: 3px;
+   margin-top: 10px;
+}
+
+
+.user-css-extended h3 {
+   font-size: 21px;
+   margin-bottom: 3px;
+   margin-top: 10px;
+}
+/* ///Font Styling H3/// */
+
+
+
+/* ///Font Styling/// H4 */
+.user-css h4 {
+   font-size: 18px;
+}
+
+
+.user-css-extended h4 {
+   font-size: 18px;
+}
+/* ///Font Styling H4/// */
+
+
+
+/* ///Font Styling H5/// */
+.user-css h5 {
+   font-size: 14px;
+}
+
+
+.user-css-extended h5 {
+   font-size: 14px;
+}
+/* ///Font Styling H5/// */
+
+
+
+/* ///Spans/// */   /*don't remember what is considered span but I wrote it for a reason*/
+.user-css span {
+   font-size: 14px;
+}
+
+
+.user-css-extended span {
+   font-size: 14px;
+}
+/* ///Spans/// */
+
+
+
+/* ///Font Styling Links/// */
+.user-css a {
+   font-size: 14px;
+}
+
+.user-css-extended a {
+   font-size: 14px;
+}
+/* ///Font Styling Links/// */
+
+
+
+/* Scrollbar Styling */
+.user-css.page::-webkit-scrollbar {
+   width: 4px;
+}
+
+.user-css.page::-webkit-scrollbar-thumb {
+   border-radius: 2px;
+}
+
+.extendedbody-comments::-webkit-scrollbar {
+   width: 4px;
+}
+
+.extendedbody-comments::-webkit-scrollbar-thumb {
+   border-radius: 2px;
+}
+/* Scrollbar Styling */
+
+
+
+/* Navigation Sidebar */
+.user-css-presentation div#world-navigation-sidebar { /*hides the sidebar*/
+   visibility: hidden;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-inactive {   /*hides the sidebar button*/
+   visibility: hidden;
+}
+/* Navigation Sidebar */
+
+
+
+}
+/*End phone adjustments*/
+
+
+
+/*--------------------------*/
+/* ------   Mobile   ------ */
+/* -------------------------*/

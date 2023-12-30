@@ -1,0 +1,1479 @@
+/* Copyright Samuel Reitich and Change Studios, LLC., 2024. */
+
+/*--------------------------*/
+/* ------   Fonts   ------- */
+/* -------------------------*/
+
+/* Title font: Expletus Sans. */
+@font-face {
+   font-family: Expletus Sans;
+   font-style: italic;
+   font-weight: 400;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/expletussans/v29/RLpnK5v5_bqufTYdnhFzDj2ddfsouIkq.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Expletus Sans;
+   font-style: italic;
+   font-weight: 500;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/expletussans/v29/RLpnK5v5_bqufTYdnhFzDj2ddfsouIkq.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Expletus Sans;
+   font-style: italic;
+   font-weight: 600;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/expletussans/v29/RLpnK5v5_bqufTYdnhFzDj2ddfsouIkq.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Expletus Sans;
+   font-style: italic;
+   font-weight: 700;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/expletussans/v29/RLpnK5v5_bqufTYdnhFzDj2ddfsouIkq.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Expletus Sans;
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/expletussans/v29/RLp5K5v5_bqufTYdnhFzDj2ddf4Yug.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Expletus Sans;
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/expletussans/v29/RLp5K5v5_bqufTYdnhFzDj2ddf4Yug.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Expletus Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/expletussans/v29/RLp5K5v5_bqufTYdnhFzDj2ddf4Yug.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Expletus Sans;
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/expletussans/v29/RLp5K5v5_bqufTYdnhFzDj2ddf4Yug.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Title font:  Expletus Sans. */
+
+
+/* Body font: Oxanium. */
+@font-face {
+   font-family: Oxanium;
+   font-style: normal;
+   font-weight: 200;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/oxanium/v19/RrQQboN_4yJ0JmiMe2LE0Q.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Oxanium;
+   font-style: normal;
+   font-weight: 300;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/oxanium/v19/RrQQboN_4yJ0JmiMe2LE0Q.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Oxanium;
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/oxanium/v19/RrQQboN_4yJ0JmiMe2LE0Q.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Oxanium;
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/oxanium/v19/RrQQboN_4yJ0JmiMe2LE0Q.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Oxanium;
+   font-style: normal;
+   font-weight: 600;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/oxanium/v19/RrQQboN_4yJ0JmiMe2LE0Q.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Oxanium;
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/oxanium/v19/RrQQboN_4yJ0JmiMe2LE0Q.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+   font-family: Oxanium;
+   font-style: normal;
+   font-weight: 800;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/oxanium/v19/RrQQboN_4yJ0JmiMe2LE0Q.woff2);
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Body font: Oxanium. */
+
+/*--------------------------*/
+/* ------   Fonts   ------- */
+/* -------------------------*/
+
+
+
+/*--------------------------*/
+/* ----   Animations   ---- */
+/* -------------------------*/
+
+/* Glowing animation for clickable links. */
+@keyframes link-glow {
+   0% {
+      opacity: 1.0;
+   }
+   50% {
+      opacity: 0.8;
+   }
+   100% {
+      opacity: 1.0;
+   }
+}
+/* Glowing animation for clickable links. */
+
+
+/* Fading background animation (desktop). */
+@keyframes background-fade-desktop {
+   0% {
+      background-position: 0 0;
+   }
+   100% {
+      background-position: 0 -600px;
+   }
+}
+
+@keyframes background-fade-desktop-meta {
+   0% {
+      background-position: 0 0;
+   }
+   100% {
+      background-position: 0 -600px;
+   }
+}
+/* Fading background animation (desktop). */
+
+
+/* Fading background animation (mobile). */
+@keyframes background-fade-mobile {
+   0% {
+      background-position: 0 0;
+   }
+   100% {
+      background-position: 0 -300px;
+   }
+}
+
+@keyframes background-fade-mobile-meta {
+   0% {
+      background-position: 0 0;
+   }
+   100% {
+      background-position: 0 300px;
+   }
+}
+/* Fading background animation (mobile). */
+
+
+/* Border animation. */
+@keyframes border-top-anim {
+  0% {
+     transform:scaleX(0);
+     transform-origin: left;
+  }
+  50% {
+     transform:scaleX(1);
+     transform-origin: left;
+  }
+  50.1% {
+     transform:scaleX(1);
+     transform-origin: right;
+  }
+
+  100% {
+     transform:scaleX(0);
+     transform-origin: right;
+  }
+}
+
+@keyframes border-left-anim {
+  0% {
+     transform:scaleY(0);
+     transform-origin: bottom;
+  }
+  50% {
+     transform:scaleY(1);
+     transform-origin: bottom;
+  }
+  50.1% {
+     transform:scaleY(1);
+     transform-origin: top;
+  }
+
+  100% {
+     transform:scaleY(0);
+     transform-origin: top;
+  }
+}
+/* Border animation. */
+
+/*--------------------------*/
+/* ----   Animations   ---- */
+/* -------------------------*/
+
+
+
+/* -------------------------- */
+/* -------   Global   ------- */
+/* -------------------------- */
+
+/* Global cover. */
+.user-css .cover {
+   display: none;
+}
+/* Global cover. */
+
+
+/* Global article background. */
+.user-css-presentation {
+   background: url(https://www.worldanvil.com/uploads/images/206a6e6215eef3c6ed5cacba8d9c9a91.jpg) fixed center; /* Lock the background position. */
+}
+/* Global article background. */
+
+
+/* Global container styling. */
+.user-css.page,
+.user-css-extended .page {
+   /* Background. */
+   width: 75vw;
+   max-height: 800px;
+   background-size: cover;
+   background-clip: padding-box;
+   background: rgba(18, 25, 44, 0.85) center;
+   backdrop-filter: blur(10px);
+   overflow: auto;
+   padding: 50px;
+   opacity: 1.0;
+
+   /* Border. */
+   border-radius: 10px;
+   box-shadow: 0 0 2px 0 rgba(0, 255, 255, 1.0),
+               0 0 4px 2px rgba(50, 255, 255, 0.75),
+               0 0 8px 4px rgba(50, 100, 255, 0.75);
+}
+/* Global container styling. */
+
+
+/* Global font styling. */
+.user-css {
+   color: rgba(255, 255, 255, 1.0);
+   font-family: Oxanium, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+.user-css-extended {
+   color: rgba(255, 255, 255, 1.0);
+   font-family: Oxanium, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+}
+/* Global font styling. */
+
+
+/* H1 font styling. */
+.user-css h1 {
+   font-size: 60px;
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+}
+
+.user-css-extended h1 {
+   font-size: 60px;
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+}
+/* H1 font styling. */
+
+
+/* H2 font styling. */
+.user-css h2 {
+   font-size: 32px;
+   text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.5);
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: rgba(0, 255, 255, 0.5);
+
+   text-align: left;
+   margin-bottom: 2px;
+   padding: 0;
+}
+
+.user-css-extended h2 {
+   font-size: 32px;
+   text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.5);
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: rgba(0, 255, 255, 0.5);
+
+   text-align: left;
+   margin-bottom: 2px;
+   padding: 0;
+}
+/* H2 font styling. */
+
+
+/* H3 font styling. */
+.user-css h3 {
+   font-size: 32px;
+   text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.5);
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+
+   text-align: left;
+   margin-bottom: 2px;
+   padding: 0;
+}
+
+.user-css-extended h3 {
+   font-size: 32px;
+   text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.5);
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+
+   text-align: left;
+   margin-bottom: 2px;
+   padding: 0;
+}
+/* H3 font styling. */
+
+
+/* H4 font styling. */
+.user-css h4 {
+   font-size: 24px;
+   text-shadow: 0 0 1px rgba(0, 255, 255, 0.5);
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+
+   text-align: left;
+   margin-bottom: 0;
+   padding: 0;
+}
+
+.user-css-extended h4 {
+   font-size: 24px;
+   text-shadow: 0 0 1px rgba(0, 255, 255, 0.5);
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+
+   text-align: left;
+   margin-bottom: 0;
+   padding: 0;
+}
+/* H4 font styling. */
+
+
+/* H5 font styling. */
+.user-css h5 {
+   font-size: 24px;
+   text-shadow: 0 0 1px rgba(0, 255, 255, 0.5);
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+
+   text-align: left;
+   margin-bottom: 0;
+   padding: 0;
+}
+
+.user-css-extended h5 {
+   font-size: 24px;
+   text-shadow: 0 0 1px rgba(0, 255, 255, 0.5);
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+
+   text-align: left;
+   margin-bottom: 0;
+   padding: 0;
+}
+/* H5 font styling. */
+
+
+/* Span styling. */
+.user-css span {
+   font-family: Oxanium, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+   color: rgba(255, 255, 255, 1.0);
+   font-size: 16px;
+}
+
+.user-css-extended span {
+   font-family: Oxanium, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+   color: rgba(255, 255, 255, 1.0);
+   font-size: 16px;
+}
+/* Span styling. */
+
+
+/* Clickable hyperlink text styling. */
+.user-css a {
+   font-family: Oxanium, sans-serif;
+   font-style: italic;
+   color: rgba(0, 255, 255, 0.5);
+   opacity: 0.8;
+
+   transition: 0.15s color, opacity; /* Brighten text when hovered. */
+}
+
+.user-css a:hover {
+   color: rgba(0, 255, 255, 1.0);
+   opacity: 1.0;
+}
+
+.user-css-extended a {
+   font-family: Oxanium, sans-serif;
+   font-style: italic;
+   font-size: 16px;
+   color: rgba(0, 255, 255, 0.5);
+   opacity: 0.8;
+
+   transition: 0.15s color, opacity; /* Brighten text when hovered. */
+}
+
+.user-css-extended a:hover {
+   color: rgba(0, 255, 255, 1.0);
+   opacity: 1.0;
+}
+/* Clickable hyperlink text styling. */
+
+
+/* Icons. */
+.user-css i {
+   color: rgba(0, 255, 255, 0.75);
+}
+
+.user-css-extended i {
+   color: rgba(0, 255, 255, 0.5);
+}
+/* Icons. */
+
+
+/* Horizontal rule. */
+.user-css hr{
+   border-top: 2px solid;
+   border-top-color: rgba(255, 255, 255, 1.0);
+}
+/* Horizontal rule. */
+
+
+/* Primary container scrollbar. */
+.user-css-presentation .page::-webkit-scrollbar {
+   width: 10px;
+}
+
+.user-css-presentation .page::-webkit-scrollbar-track { /* Track that the bar scrolls along. */
+   background: rgba(0, 255, 255, 0.15);
+   border-radius: 10px;
+
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
+.user-css-presentation .page::-webkit-scrollbar-thumb { /* The bar that moves across the track (the thumb). */
+   background: rgba(0, 255, 255, 0.3);
+   border-radius: 10px;
+}
+
+.user-css-presentation .page::-webkit-scrollbar-thumb:hover { /* The thumb when hovered over. */
+   background: rgba(0, 255, 255, 0.6);
+}
+/* Primary container scrollbar. */
+
+
+/* Navigation sidebar. */
+.user-css-presentation div#world-navigation-sidebar {
+   display: none;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-inactive { /* The sidebar button while closed. */
+   display: none;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-inactive i { /* The sidebar button's icon while closed. */
+   display: none;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-active { /* The sidebar button while open. */
+   display: none;
+}
+/* Navigation Sidebar */
+
+
+/* Global footer. Includes copyright notice and RSS feed. */
+.user-css .copyright-attribution {
+   font-size: 10px;
+}
+
+.user-css a.world-share-rss-feed-link { /* RSS feed button. */
+   display: none;
+}
+/* Global footer. */
+
+/* -------------------------- */
+/* -------   Global   ------- */
+/* -------------------------- */
+
+
+
+/* -------------------------- */
+/* ---   World Homepage   --- */
+/* -------------------------- */
+
+/* World heading. */
+.user-css .world-title { /* World title text box. */
+   font-size: 96px;
+   color: rgba(0, 255, 255, 1.0);
+   text-shadow: 4px 4px 8px rgba(0, 255, 255, 0.5);
+
+   font-style: normal;
+   font-weight: bold;
+
+   padding-bottom: 30px;
+}
+
+.user-css .world-authors { /* World author text. */
+   display: none;
+}
+
+.user-css h3.world-currentDate { /* Current date. */
+   display: none;
+}
+
+.user-css .heading .subheading { /* Description. */
+   font-size: 16px;
+   font-style: italic;
+}
+/* World heading. */
+
+
+/* World codex. */
+.user-css .world-content .world-menu {
+   background-color: rgba(9, 12.5, 22, 0.5);
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(10px);
+
+   padding: 15px 30px;
+   border-radius: 5px;
+}
+
+.user-css .world-content .world-menu .world-toc-header { /* World codex header. */
+   font-family: Expletus Sans, sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+}
+
+.user-css .world-content .world-menu .world-category-link { /* Category links text. */
+}
+
+.user-css .world-content .open-category-page { /* "Open category page" button. */
+   font-size: 50%;
+}
+
+.user-css .world-content .open-category-page i { /* "Open category page" button icon. We have to translate this instead of the button itself for some reason. */
+   transform: translateY(-4px);
+   margin-left: 4px;
+}
+
+.user-css .world-content .followers-counter { /* Followers counter. */
+   display: none;
+}
+
+.user-css .world-meta-categories-link { /* The world meta link. */
+   display: none;
+}
+/* World codex. */
+
+
+/* Recent articles. */
+.user-css .world-content .world-recent-articles h2 { /* Recent articles header. */
+   font-family: Expletus Sans, sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+
+   padding-top: 15px;
+   padding-bottom: 10px;
+}
+/* Recent articles. */
+
+
+/* Timelines list. */
+.user-css .world-content .world-timelines .timelines-list-header { /* Timelines list header. */
+   font-family: Expletus Sans, sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+
+   padding-top: 15px;
+   padding-bottom: 10px;
+}
+
+
+/* Timelines list. */
+
+
+/* Article panels. These are the article listings when navigating the world codex or the "recent articles" panel. */
+.user-css .article-panel,
+.user-css-extended .article-panel { /* The article panel container. */
+   background: rgba(18, 25, 44, 0.0);
+   box-shadow: 0 0 1px 0 rgba(0, 255, 255, 1.0),
+               0 0 2px 1px rgba(50, 255, 255, 0.75);
+
+   color: rgba(0, 255, 255, 0.5);
+
+   margin: 5px 10%;
+   border-radius: 5px;
+
+   transition: 0.1s transform;
+}
+
+.user-css .article-panel:hover,
+.user-css-extended .article-panel:hover { /* The article panel container while hovered. */
+   box-shadow: 0 0 1px 0 rgba(0, 255, 255, 1.0),
+               0 0 2px 1px rgba(50, 255, 255, 0.75),
+               0 0 4px 2px rgba(50, 100, 255, 0.75);
+
+   color: rgba(0, 255, 255, 1.0);
+
+   transform: scale(1.2);
+}
+
+.user-css .panel-default li,
+.user-css-extended .panel-default li { /* The list of articles when opened in the codex. */
+   padding: 5px 0 0;
+}
+
+.user-css .article-list li,
+.user-css-extended .article-list li { /* The list of articles in the "recent articles" list. */
+   padding: 5px 0 0;
+}
+
+.user-css .article-panel .heading,
+.user-css-extended .article-panel .heading { /* The article title. */
+   color: rgba(0, 255, 255, 0.5);
+   opacity: 0.8;
+
+   font-family: Oxanium, sans-serif;
+   font-weight: bold;
+   font-style: italic;
+
+   transition: 0.15s color, opacity; /* Brighten text when hovered. */
+}
+
+.user-css .article-panel .heading:hover,
+.user-css-extended .article-panel .heading:hover {
+   color: rgba(0, 255, 255, 1.0);
+   opacity: 1.0;
+}
+
+.user-css .article-panel .subheading,
+.user-css-extended .article-panel .subheading { /* The subheading displaying the article type and when it was last updated. */
+   display: none;
+}
+/* Article Panel */
+
+/* -------------------------- */
+/* ---   World Homepage   --- */
+/* -------------------------- */
+
+
+
+/* -------------------------- */
+/* ------   Articles   ------ */
+/* -------------------------- */
+
+/* Article title. */
+.user-css .article-title h1 {
+   font-style: normal;
+}
+
+.user-css .article-title .pronunciation  { /* The pronunciation guide text after the title. Does not include the parentheses. */
+   font-style: italic;
+}
+
+.user-css .article-title .pronunciation-bracket { /* The parentheses before and after the pronunciation guide. */
+   font-size: 1.0em; /* IPA characters we use appear way too big for parentheses of the same size. */
+}
+/* Article title. */
+
+
+/* Quote boxes. */
+.user-css blockquote { /* Quote body. */
+   background: rgba(9, 12.5, 22, 0.5);
+   margin-bottom: 25px;
+
+   border-radius: 5px;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+
+   /* I can't decide which of these borders/box shadows I like more. */
+   /*border: none;*/
+   /*box-shadow: 0 0 1px 0 rgba(0, 255, 255, 1.0), */
+   /*            0 0 2px 1px rgba(50, 255, 255, 0.75),*/
+   /*            0 0 4px 2px rgba(50, 100, 255, 0.75);*/
+
+   color: rgba(255, 255, 255, 1.0);
+   font-family: Oxanium, sans-serif;
+   font-size: 18px;
+}
+
+.user-css blockquote small { /* Attribution line. */
+   color: rgba(255, 255, 255, 1.0);
+   font-family: Oxanium, sans-serif;
+   font-size: 14px;
+
+   padding-top: 10px;
+   text-indent: 15px;
+}
+/* Quote boxes. */
+
+
+/* Sidebar/panel boxes. */
+.user-css .organization-flag { /* The flag of this article's organization if it represents one. */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+
+.user-css div.panel .padding-10 { /* Images in the sidebar/panel. I don't know why this is the element we have to target. I think it has something to do with pseudo/wrapper-elements. */
+   pointer-events: none; /* Prevent images from opening standalone pages. */
+}
+
+.user-css div.panel {
+   background: rgba(18, 25, 44, 0.5);
+
+   color: rgba(255, 255, 255, 1.0);
+   font-family: Oxanium, sans-serif;
+   font-size: 16px;
+
+   border-radius: 5px;
+   border: none;
+   /*border: 1px solid rgba(255, 255, 255, 0.5);*/
+   box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+
+   /* I can't decide which of these two styles I like more. */
+   /*background: rgba(18, 25, 44, 0.0); */
+   /*border: 1px solid rgba(255, 255, 255, 0.5);*/
+   /*box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);*/
+}
+
+.user-css div.panel hr { /* Horizontal rules. */
+   border-top: 1px solid;
+   border-top-color: rgba(255, 255, 255, 0.5);
+}
+/* Sidebar/panel boxes. */
+
+
+/* Search bar. */
+.user-css .search-form { /* Search bar location. */
+   margin: 10px 0 0;
+   left: auto;
+}
+
+.user-css .typeahead-input { /* Search bar input field. */
+   font-family: Oxanium, sans-serif;
+   color: rgba(255, 255, 255, 1.0);
+   padding: 5px 5px;
+
+   background: rgba(18, 25, 44, 0.85);
+   border: none;
+   border-radius: 3px;
+   box-shadow: 0 0 1px 0 rgba(0, 255, 255, 0.5),
+               0 0 2px 1px rgba(50, 255, 255, 0.375),
+               0 0 4px 2px rgba(50, 100, 255, 0.375)
+}
+
+.user-css .typeahead-input:focus { /* The search bar input field while focused. */
+   outline: unset;
+   border-color: rgba(0, 255, 255, 1.0);
+   box-shadow: 0 0 1px 0 rgba(0, 255, 255, 1.0),
+               0 0 2px 1px rgba(50, 255, 255, 0.75),
+               0 0 4px 2px rgba(50, 100, 255, 0.75)
+}
+
+.user-css .typeahead-input::placeholder { /* "Search" placeholder inside the search bar when empty. */
+   color: rgba(255, 255, 255, 0.5);
+}
+
+.user-css #search-button.btn.btn-link { /* Magnifying glass symbol in the search bar. */
+   color: rgba(255, 255, 255, 0.5);
+   font-family: Oxanium, sans-serif;
+}
+
+.user-css .typeahead.dropdown-menu { /* Dropdown menu of search results. */
+   background: rgba(18, 25, 44, 0.85);
+   backdrop-filter: blur(10px);
+   border: none;
+   box-shadow: 0 0 1px 0 rgba(0, 255, 255, 1.0),
+               0 0 2px 1px rgba(50, 255, 255, 0.75),
+               0 0 4px 2px rgba(50, 100, 255, 0.75);
+}
+
+.user-css .typeahead .dropdown-item { /* Dropdown item boxes. */
+   color: rgba(0, 255, 255, 0.5);
+   font-style: normal;
+   padding: 5px 5px;
+}
+
+.user-css .typeahead .active .dropdown-item { /* Dropdown item boxes while hovered. */
+   color: rgba(0, 255, 255, 1.0);
+   font-weight: normal;
+
+   background: unset;
+}
+
+.user-css .typeahead .text-muted { /* The article type listed after each item in the dropdown menu. E.g. "(Organization)". */
+   display: none;
+}
+/* Search bar. */
+
+
+/* "Go to homepage" button. */
+.user-css .backtoworld a{
+   margin-left: 15px;
+   top: -20px;
+   left: auto;
+   right: 0;
+   margin-right: 15px;
+   padding: 5px 5px;
+
+
+   background: rgba(18, 25, 44, 0.85);
+   border: none;
+   border-radius: 3px;
+   box-shadow: 0 0 1px 0 rgba(0, 255, 255, 0.5),
+               0 0 2px 1px rgba(50, 255, 255, 0.375),
+               0 0 4px 2px rgba(50, 100, 255, 0.375);
+
+   font-family: Oxanium, sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   color: rgba(0, 255, 255, 0.5);
+}
+
+.user-css .backtoworld a:hover{
+   color: rgba(0, 255, 255, 1.0);
+
+   background: rgba(18, 25, 44, 0.85);
+   box-shadow: 0 0 1px 0 rgba(0, 255, 255, 1.0),
+               0 0 2px 1px rgba(50, 255, 255, 0.75),
+               0 0 4px 2px rgba(50, 100, 255, 0.75);
+}
+/* "Go to homepage" button. */
+
+
+/* Footer buttons (e.g. "copy," "report," etc.). I don't think you're actually allowed to edit this, but if you're
+ * willing to FAFO, go for it. */
+.user-css .btn-primary {
+}
+/* Footer buttons. */
+
+/* -------------------------- */
+/* ------   Articles   ------ */
+/* -------------------------- */
+
+
+
+/* -------------------------- */
+/* ---   Category Pages   --- */
+/* -------------------------- */
+
+.user-css .category-header p {
+   margin: 10px 0;
+}
+
+.user-css .category-articles { /* The list of articles in this category. */
+   margin-top: -15px;
+}
+
+/* -------------------------- */
+/* ---   Category Pages   --- */
+/* -------------------------- */
+
+
+
+
+/*.user-css.page-followers .follower-box{   !*the box with with the followers name and picture*!*/
+/*   background: rgba(0, 255, 255, .15);*/
+/*   border: 4px solid rgba(0,255,255,.4);*/
+/*   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);*/
+/*   border-radius: 4px;*/
+/*   color: rgba(0, 255, 255, .7);*/
+/*   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);*/
+/*   font-family: "Expletus Sans";*/
+/*font-style: italic;*/
+/*   font-size: 20px;*/
+/*}*/
+/*!* Follower Page *!*/
+
+
+
+/*!* Tooltip *!*/
+/*!*honestly, i have no idea how this actually works. i just keep trying stuff until eventually it looks good. forgive me.*!*/
+/*.user-css .tooltip.top .tooltip-arrow,*/
+/*.user-css-extended .tooltip.top .tooltip-arrow,*/
+/*.user-css-worldmenu .tooltip.top .tooltip-arrow {*/
+/*   border-top-color: rgba(0, 155, 155, .6);*/
+/*}*/
+
+/*.user-css .tooltip.left .tooltip-arrow,*/
+/*.user-css-extended .tooltip.left .tooltip-arrow,*/
+/*.user-css-worldmenu .tooltip.left .tooltip-arrow {*/
+/*   border-top-color: rgba(0, 155, 155, .6);*/
+/*}*/
+
+/*.user-css .tooltip.bottom .tooltip-arrow,*/
+/*.user-css-extended .tooltip.bottom .tooltip-arrow,*/
+/*.user-css-worldmenu .tooltip.bottom .tooltip-arrow {*/
+/*   border-top-color: rgba(0, 155, 155, .6);*/
+/*}*/
+
+/*.user-css .tooltip.right .tooltip-arrow,*/
+/*.user-css-extended .tooltip.right .tooltip-arrow,*/
+/*.user-css-worldmenu .tooltip.right .tooltip-arrow {*/
+/*   border-top-color: rgba(0, 155, 155, .6);*/
+/*}*/
+
+/*.user-css .tooltip .tooltip-inner,*/
+/*.user-css-extended .tooltip .tooltip-inner,*/
+/*.user-css-worldmenu .tooltip .tooltip-inner {*/
+/*   background: rgba(0, 80, 80, 1);*/
+/*   border-color: rgba(0, 155, 155, .0);*/
+/*   border: solid 2px;*/
+/*   color: rgba(0, 255, 255, .7);*/
+/*   font-size: 20px;*/
+/*   font-family: "Expletus Sans";*/
+/*font-style: italic;*/
+/*}*/
+
+/*.user-css .text-abbreviation {*/
+/*   border: 1px rgba(0,255,255,.6) solid;*/
+/*   padding-left: 2px;*/
+/*   padding-right: 2px;*/
+/*   background: rgba(0,155,155,.2);*/
+/*}*/
+
+/*.user-css-presentation .tooltipster-box {*/
+/*   background: rgba(0,100,100,.8)!important;*/
+/*   border-color: rgba(0, 255, 255, .4)!important;*/
+/*   border: solid 2px!important;*/
+/*   color: rgba(0, 255, 255, .4)!important;*/
+/*}*/
+
+/*.user-css-presentation .tooltipster-content{*/
+/*   color: rgba(0, 255, 255, .8)!important;*/
+/*   font-family: "Expletus Sans";*/
+/*font-style: italic;*/
+/*   font-size: 16px;*/
+/*   line-height: 1.3;*/
+/*}*/
+
+/*.user-css-presentation .tooltipster-arrow-border{*/
+/*   border-top-color: rgba(0, 255, 255, .4)!important;*/
+/*}*/
+/*!* Tooltip *!*/
+
+
+/*!* Fancy border *!*/
+/*!*requires some special BBCODE to function - see https://www.worldanvil.com/w/perillel-zogmaddog/a/grady-s-hill-landmark?preview=true spans fancy_border...*!*/
+/*!*The BBCODE I used*/
+/*[row]*/
+/*[container:col-sm-1]*/
+/*[/container]*/
+/*[container:fancy_border_box]*/
+/*[container:fancy_border_content]*/
+/*Where you will type all the goodies*/
+/*[section:fancy_border_top]*/
+
+/*[/section]*/
+/*[section:fancy_border_left]*/
+
+/*[/section]*/
+/*[section:fancy_border_right]*/
+
+/*[/section]*/
+/*[section:fancy_border_bottom]*/
+
+/*[/section]*/
+/*[/container]*/
+/*[/container]*/
+/*[container:col-sm-1]*/
+/*[/container]*/
+/*[/row]*/
+/**!*/
+
+/*.user-css div.fancy_border_content{*/
+/*  width: 83.33333333%;*/
+/*  height: inherit;*/
+/*  overflow: hidden;*/
+/*  padding: 30px;*/
+/*}*/
+
+/*.user-css span.fancy_border_top {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  display: block;*/
+/*  box-sizing: border-box;*/
+/*  content: normal;*/
+/*  position: absolute;*/
+/*  width:100%;*/
+/*  height: 3px;*/
+/*  background: rgba(0, 255, 255, .6);*/
+/*  animation: border-top-anim 8s linear infinite;*/
+/*  box-shadow: 0px 0px 10px rgba(0, 255, 255, .6);*/
+/*}*/
+
+/*.user-css .fancy_border_top:before {*/
+
+/*}*/
+
+/*.user-css .fancy_border_bottom {*/
+/*  position: absolute;*/
+/*  top: auto;*/
+/*  bottom: 0px;*/
+/*  left: 0;*/
+/*  display: block;*/
+/*  box-sizing: border-box;*/
+/*  transform: rotate(180deg);*/
+/*  content: " ";*/
+/*  width:100%;*/
+/*  height: 3px;*/
+/*  background: rgba(0, 255, 255, .6);*/
+/*  animation: bottomanimation 8s linear infinite;*/
+/*  box-shadow: 0px 0px 10px rgba(0, 255, 255, .6);*/
+/*}*/
+
+/*.user-css .fancy_border_bottom:before {*/
+
+/*}*/
+
+/*.user-css .fancy_border_left {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  display: block;*/
+/*  box-sizing: border-box;*/
+/*  transform: rotate(0deg);*/
+/*  content: " ";*/
+/*  position: absolute;*/
+/*  width: 3px;*/
+/*  height: 100%;*/
+/*  background: rgba(0, 255, 255, .6);*/
+/*  animation: border-left-anim 8s linear infinite;*/
+/*  box-shadow: 0px 0px 10px rgba(0, 255, 255, .6);*/
+/*}*/
+
+/*.user-css .fancy_border_left:before {*/
+
+/*}*/
+
+/*.user-css .fancy_border_right {*/
+/*  position: absolute;*/
+/*  top: 0%;*/
+/*  left: auto;*/
+/*  right: 0px;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  transform-origin: 0% 0%;*/
+/*  display: block;*/
+/*  box-sizing: border-box;*/
+/*  transform: rotate(180deg);*/
+/*  content: " ";*/
+/*  position: absolute;*/
+/*  width: 3px;*/
+/*  height: 100%;*/
+/*  background: rgba(0, 255, 255, .6);*/
+/*  animation: rightanimation 8s linear infinite;*/
+/*  box-shadow: 0px 0px 10px rgba(0, 255, 255, .6);*/
+/*}*/
+
+/*.user-css .fancy_border_right:before {*/
+
+/*}*/
+
+/*@keyframes border-top-anim {*/
+/*  0% {*/
+/*  transform:scaleX(0);*/
+/*  transform-origin: left;*/
+/*  }*/
+/*  50%*/
+/*  {*/
+/*    transform:scaleX(1);*/
+/*  transform-origin: left;*/
+/*  }*/
+/*  50.1%*/
+/*  {*/
+/*    transform:scaleX(1);*/
+/*  transform-origin: right;*/
+
+/*  }*/
+/*  100%*/
+/*  {*/
+/*    transform:scaleX(0);*/
+/*  transform-origin: right;*/
+
+/*  }*/
+/*}*/
+
+/*@keyframes bottomanimation {*/
+/*  0% {*/
+/*  transform:scaleX(0);*/
+/*  transform-origin: right;*/
+/*  }*/
+/*  50%*/
+/*  {*/
+/*    transform:scaleX(1);*/
+/*  transform-origin: right;*/
+/*  }*/
+/*  50.1%*/
+/*  {*/
+/*    transform:scaleX(1);*/
+/*  transform-origin: left;*/
+
+/*  }*/
+/*  100%*/
+/*  {*/
+/*    transform:scaleX(0);*/
+/*  transform-origin: left;*/
+
+/*  }*/
+/*}*/
+
+/*@keyframes border-left-anim {*/
+/*  0% {*/
+/*  transform:scaleY(0);*/
+/*  transform-origin: bottom;*/
+/*  }*/
+/*  50%*/
+/*  {*/
+/*    transform:scaleY(1);*/
+/*  transform-origin: bottom;*/
+/*  }*/
+/*  50.1%*/
+/*  {*/
+/*    transform:scaleY(1);*/
+/*  transform-origin: Top;*/
+
+/*  }*/
+
+/*  100%*/
+/*  {*/
+/*    transform:scaleY(0);*/
+/*  transform-origin: top;*/
+
+/*  }*/
+/*}*/
+
+/*@keyframes rightanimation {*/
+/*  0% {*/
+/*  transform:scaleY(0);*/
+/*  transform-origin: top;*/
+/*  }*/
+/*  50%*/
+/*  {*/
+/*    transform:scaleY(1);*/
+/*  transform-origin: top;*/
+/*  }*/
+/*  50.1%*/
+/*  {*/
+/*    transform:scaleY(1);*/
+/*  transform-origin: bottom;*/
+
+/*  }*/
+
+/*  100%*/
+/*  {*/
+/*    transform:scaleY(0);*/
+/*  transform-origin: bottom;*/
+
+/*  }*/
+/*}*/
+
+/*!* Fancy border *!*/
+
+
+/*!* -------------------------- *!*/
+/*!* -------   Global   ------- *!*/
+/*!* -------------------------- *!*/
+
+
+
+/*!*--------------------------*!*/
+/*!* ------   Mobile   ------ *!*/
+/*!* -------------------------*!*/
+/*!*creating a separate mobile section of your code gives you the option of optimizing your world for mobile viewing.*!*/
+/*!*normally you'd want the mobile section to be first, since you are expecting most mobile users to be using their cellular data*!*/
+/*!*in the case of this css, i designed it so that everything between the desktop and mobile version is interchangable. all i had to do was update the size of fonts and some images*!*/
+/*!*if it doesn't load right away, it wont break the mobile viewing experience, it will just look a little big*!*/
+
+
+/*!*Only affects phones (small screens)*!*/
+/*@media only screen and (max-width: 500px) {*/
+
+/*!* ///Page + Article Background/// *!*/
+/*.user-css-presentation {   !*this affects the overall background of the world*!*/
+/*background: url(https://www.worldanvil.com/uploads/images/1d35aa77368b1f5d09934f97ab520ca3.jpg);*/
+/*background-size: 120%;*/
+/*background-attachment: fixed;   !*this locks the image on the screen; it wont scroll*!*/
+/*}*/
+
+/* .user-css.page,*/
+/*.user-css-extended .page {   !*this affects the large page container*!*/
+/*    background: url(https://www.worldanvil.com/uploads/images/c39712112e087c258df312b19c4d1081.png);*/
+/*   background-size: 300px;*/
+/*   background-clip: padding-box;*/
+/*   background-position: center;*/
+/*   background-repeat: repeat;*/
+/*   animation: background-fade-mobile 10s linear infinite;*/
+/*    box-shadow: 0px 0px 0px;*/
+/*   overflow: auto;*/
+/*   overflow-x: hidden;*/
+/*   max-height: 500px;*/
+/*   padding: 50px;*/
+/*   border-image-source: url(https://www.worldanvil.com/uploads/images/65aaf42af59a3a7c4e40f4f2ffc24ed6.png);*/
+/*   border-image-slice: 20;*/
+/*   border-image-repeat: stretch;*/
+/*   border-width: 20px;*/
+/*   border-style: solid;*/
+/*   border-image-outset: 0px;*/
+/*}*/
+/*!* ///Page + Article Background/// *!*/
+
+/*!* ///Font Styling Global/// *!*/
+/*.user-css {*/
+/*   font-size: 14px;*/
+/*   line-height: 1.2;*/
+/*}*/
+
+
+/*.user-css-extended {*/
+/*   font-size: 14px;*/
+/*   line-height: 1.2;*/
+/*}*/
+/*!* ///Font Styling Global/// *!*/
+
+
+
+/*!* ///Font Styling H1/// *!*/
+/*.user-css h1 {*/
+/*   font-size: 35px;*/
+/*   line-height: 1.3;*/
+/*   margin-top: 30px;*/
+/*}*/
+
+
+/*.user-css-extended h1 {*/
+/*   font-size: 35px;*/
+/*   line-height: 1.3;*/
+/*   margin-top: 30px;*/
+/*}*/
+/*!* ///Font Styling H1/// *!*/
+
+
+
+/*!* ///Font Styling H2/// *!*/
+/*.user-css h2 {*/
+/*   font-size: 28px;*/
+/*   margin-bottom: 3px;*/
+/*   line-height: 1.2;*/
+/*   margin-top: 10px;*/
+/*}*/
+
+
+/*.user-css-extended h2 {*/
+/*   font-size: 28px;*/
+/*   margin-bottom: 3px;*/
+/*   line-height: 1.2;*/
+/*   margin-top: 10px;*/
+/*}*/
+/*!* ///Font Styling H2/// *!*/
+
+
+
+/*!* ///Font Styling H3/// *!*/
+/*.user-css h3 {*/
+/*   font-size: 21px;*/
+/*   margin-bottom: 3px;*/
+/*   margin-top: 10px;*/
+/*}*/
+
+
+/*.user-css-extended h3 {*/
+/*   font-size: 21px;*/
+/*   margin-bottom: 3px;*/
+/*   margin-top: 10px;*/
+/*}*/
+/*!* ///Font Styling H3/// *!*/
+
+
+
+/*!* ///Font Styling/// H4 *!*/
+/*.user-css h4 {*/
+/*   font-size: 18px;*/
+/*}*/
+
+
+/*.user-css-extended h4 {*/
+/*   font-size: 18px;*/
+/*}*/
+/*!* ///Font Styling H4/// *!*/
+
+
+
+/*!* ///Font Styling H5/// *!*/
+/*.user-css h5 {*/
+/*   font-size: 14px;*/
+/*}*/
+
+
+/*.user-css-extended h5 {*/
+/*   font-size: 14px;*/
+/*}*/
+/*!* ///Font Styling H5/// *!*/
+
+
+
+/*!* ///Spans/// *!   !*don't remember what is considered span but I wrote it for a reason*!*/
+/*.user-css span {*/
+/*   font-size: 14px;*/
+/*}*/
+
+
+/*.user-css-extended span {*/
+/*   font-size: 14px;*/
+/*}*/
+/*!* ///Spans/// *!*/
+
+
+
+/*!* ///Font Styling Links/// *!*/
+/*.user-css a {*/
+/*   font-size: 14px;*/
+/*}*/
+
+/*.user-css-extended a {*/
+/*   font-size: 14px;*/
+/*}*/
+/*!* ///Font Styling Links/// *!*/
+
+
+
+/*!* Scrollbar Styling *!*/
+/*.user-css.page::-webkit-scrollbar {*/
+/*   width: 4px;*/
+/*}*/
+
+/*.user-css.page::-webkit-scrollbar-thumb {*/
+/*   border-radius: 2px;*/
+/*}*/
+
+/*.extendedbody-comments::-webkit-scrollbar {*/
+/*   width: 4px;*/
+/*}*/
+
+/*.extendedbody-comments::-webkit-scrollbar-thumb {*/
+/*   border-radius: 2px;*/
+/*}*/
+/*!* Scrollbar Styling *!*/
+
+
+
+/*!* Navigation Sidebar *!*/
+/*.user-css-presentation div#world-navigation-sidebar { !*hides the sidebar*!*/
+/*   visibility: hidden;*/
+/*}*/
+
+/*.user-css-presentation .world-navigation-palette-trigger-inactive {   !*hides the sidebar button*!*/
+/*   visibility: hidden;*/
+/*}*/
+/*!* Navigation Sidebar *!*/
+
+
+
+/*}*/
+/*!*End phone adjustments*!*/
+
+
+
+/*!*--------------------------*!*/
+/*!* ------   Mobile   ------ *!*/
+/*!* -------------------------*!*/
