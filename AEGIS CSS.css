@@ -641,12 +641,7 @@
 }
 
 .user-css .world-content .open-category-page { /* "Open category page" button. */
-   font-size: 50%;
-}
-
-.user-css .world-content .open-category-page i { /* "Open category page" button icon. We have to translate this instead of the button itself for some reason. */
-   transform: translateY(-4px);
-   margin-left: 4px;
+   display: none;
 }
 
 .user-css .world-content .followers-counter { /* Followers counter. */
@@ -936,6 +931,13 @@
 /* "Go to homepage" button. */
 
 
+/* Link to this article's category in the footer. */
+.user-css div.nav-linear {
+   display: none;
+}
+/* Link to this article's category in the footer. */
+
+
 /* Footer buttons (e.g. "copy," "report," etc.). I don't think you're actually allowed to edit this, but if you're
  * willing to FAFO, go for it. */
 .user-css .btn-primary {
@@ -944,24 +946,6 @@
 
 /* -------------------------- */
 /* ------   Articles   ------ */
-/* -------------------------- */
-
-
-
-/* -------------------------- */
-/* ---   Category Pages   --- */
-/* -------------------------- */
-
-.user-css .category-header p {
-   margin: 10px 0;
-}
-
-.user-css .category-articles { /* The list of articles in this category. */
-   margin-top: -15px;
-}
-
-/* -------------------------- */
-/* ---   Category Pages   --- */
 /* -------------------------- */
 
 
