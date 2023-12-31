@@ -288,13 +288,7 @@
 
 
 /* Global font styling. */
-.user-css {
-   color: rgba(255, 255, 255, 1.0);
-   font-family: Oxanium, sans-serif;
-   font-size: 16px;
-   line-height: 1.5;
-}
-
+.user-css,
 .user-css-extended {
    color: rgba(255, 255, 255, 1.0);
    font-family: Oxanium, sans-serif;
@@ -305,15 +299,7 @@
 
 
 /* H1 font styling. */
-.user-css h1 {
-   font-size: 60px;
-   color: rgba(0, 255, 255, 1.0);
-
-   font-family: Expletus Sans, sans-serif;
-   font-weight: bold;
-   font-style: italic;
-}
-
+.user-css h1,
 .user-css-extended h1 {
    font-size: 60px;
    color: rgba(0, 255, 255, 1.0);
@@ -326,24 +312,7 @@
 
 
 /* H2 font styling. */
-.user-css h2 {
-   font-size: 32px;
-   text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.5);
-   color: rgba(0, 255, 255, 1.0);
-
-   font-family: Expletus Sans, sans-serif;
-   font-weight: bold;
-   font-style: italic;
-
-   border-bottom-width: 1px;
-   border-bottom-style: solid;
-   border-bottom-color: rgba(0, 255, 255, 0.5);
-
-   text-align: left;
-   margin-bottom: 2px;
-   padding: 0;
-}
-
+.user-css h2,
 .user-css-extended h2 {
    font-size: 32px;
    text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.5);
@@ -365,20 +334,7 @@
 
 
 /* H3 font styling. */
-.user-css h3 {
-   font-size: 32px;
-   text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.5);
-   color: rgba(0, 255, 255, 1.0);
-
-   font-family: Expletus Sans, sans-serif;
-   font-weight: bold;
-   font-style: italic;
-
-   text-align: left;
-   margin-bottom: 2px;
-   padding: 0;
-}
-
+.user-css h3,
 .user-css-extended h3 {
    font-size: 32px;
    text-shadow: 1px 1px 2px rgba(0, 255, 255, 0.5);
@@ -396,20 +352,7 @@
 
 
 /* H4 font styling. */
-.user-css h4 {
-   font-size: 24px;
-   text-shadow: 0 0 1px rgba(0, 255, 255, 0.5);
-   color: rgba(0, 255, 255, 1.0);
-
-   font-family: Expletus Sans, sans-serif;
-   font-weight: bold;
-   font-style: italic;
-
-   text-align: left;
-   margin-bottom: 0;
-   padding: 0;
-}
-
+.user-css h4,
 .user-css-extended h4 {
    font-size: 24px;
    text-shadow: 0 0 1px rgba(0, 255, 255, 0.5);
@@ -427,20 +370,7 @@
 
 
 /* H5 font styling. */
-.user-css h5 {
-   font-size: 24px;
-   text-shadow: 0 0 1px rgba(0, 255, 255, 0.5);
-   color: rgba(0, 255, 255, 1.0);
-
-   font-family: Expletus Sans, sans-serif;
-   font-weight: bold;
-   font-style: italic;
-
-   text-align: left;
-   margin-bottom: 0;
-   padding: 0;
-}
-
+.user-css h5,
 .user-css-extended h5 {
    font-size: 24px;
    text-shadow: 0 0 1px rgba(0, 255, 255, 0.5);
@@ -458,14 +388,7 @@
 
 
 /* Span styling. */
-.user-css span {
-   font-family: Oxanium, sans-serif;
-   font-weight: normal;
-   font-style: normal;
-   color: rgba(255, 255, 255, 1.0);
-   font-size: 16px;
-}
-
+.user-css span,
 .user-css-extended span {
    font-family: Oxanium, sans-serif;
    font-weight: normal;
@@ -477,44 +400,26 @@
 
 
 /* Clickable hyperlink text styling. */
-.user-css a {
-   font-family: Oxanium, sans-serif;
-   font-style: italic;
-   color: rgba(0, 255, 255, 0.5);
-   opacity: 0.8;
-
-   transition: 0.15s color, opacity; /* Brighten text when hovered. */
-}
-
-.user-css a:hover {
-   color: rgba(0, 255, 255, 1.0);
-   opacity: 1.0;
-}
-
+.user-css a,
 .user-css-extended a {
    font-family: Oxanium, sans-serif;
    font-style: italic;
-   font-size: 16px;
    color: rgba(0, 255, 255, 0.5);
    opacity: 0.8;
 
    transition: 0.15s color, opacity; /* Brighten text when hovered. */
 }
 
+.user-css a:hover,
 .user-css-extended a:hover {
    color: rgba(0, 255, 255, 1.0);
    opacity: 1.0;
 }
-/* Clickable hyperlink text styling. */
-
 
 /* Icons. */
-.user-css i {
-   color: rgba(0, 255, 255, 0.75);
-}
-
+.user-css i,
 .user-css-extended i {
-   color: rgba(0, 255, 255, 0.5);
+   color: rgba(0, 255, 255, 0.75);
 }
 /* Icons. */
 
@@ -547,7 +452,7 @@
 
 
 /* Horizontal rule. */
-.user-css hr{
+.user-css hr {
    border-top: 2px solid;
    border-top-color: rgba(255, 255, 255, 1.0);
 }
@@ -987,10 +892,21 @@
 
 /* Timeline heading. */
 .user-css .timeline-header { /* Header/title. */
+   color: rgba(0, 255, 255, 1.0);
+
+   font-family: Expletus Sans, sans-serif;
+   font-weight: bold;
+   font-style: normal;
+   text-wrap: balance; /* stfu WebStorm this isn't an error!! */
+
    line-height: 1.25em;
 }
 
-.user-css .page-timeline .subheading { /* Subheading/description. */
+.user-css .heading .subheading { /* Subheading/description. */
+   font-family: Oxanium, sans-serif;
+   font-weight: normal;
+   font-style: italic;
+   color: rgba(255, 255, 255, 1.0);
 }
 
 .user-css .timeline-go-to-start { /* The "Go to the beginning" button. I'm hiding this just because this actually skips
@@ -1010,7 +926,7 @@
    border-radius: 5px;
 }
 
-.user-css .timeline li .tl-circ { /* Icons on the timeline that represent an event and its impact (e.g. "Major"). */
+.user-css .timeline li .tl-circ { /* Icons on the timeline that represent an event and its impact (e.g. "Major Event"). */
    background-color: rgba(0, 127, 127, 1.0);
    border-color: rgba(0, 255, 255, 1.0);
    border-width: 1px;
@@ -1018,6 +934,8 @@
    box-shadow: 0 0 2px 0.5px rgba(0, 255, 255, 1.0),
                0 0 2px 1px rgba(50, 255, 255, 0.75),
                0 0 2px 1.5px rgba(50, 100, 255, 0.75);
+
+   pointer-events: none; /* Disable event impact tooltips (e.g. "Important Event"). */
 }
 /* Time line. */
 
@@ -1032,95 +950,91 @@
 }
 
 .user-css .tl-heading .header-icon { /* The icon for the event, which displays a symbol representing the type of event it is. */
-   
+   border-color: rgba(50, 255, 255, 0.75);
+   background-color: rgba(18, 25, 44, 1.0);
+   font-size: small; /* I'm not sure why this makes the icon the perfect size every time and I don't really want to know. */
 }
+
+.user-css .tl-heading-date { /* The text box for the event date and a horizontal ruler beneath it. */
+   margin-top: 5px;
+}
+
+.user-css .tl-heading-date i { /* This is just to align the chevron between start and end dates for multi-year events. */
+   font-size: small;
+}
+
+.user-css .tl-heading-date .history-date { /* The event date text. */
+   padding-bottom: 5px;
+}
+
+.user-css .timeline li h5 { /* The heading of the event description, which includes the title and event type (e.g. "War"). */
+   margin-top: -5px;
+
+   color: rgba(0, 255, 255, 1.0);
+   font-weight: bold;
+   font-style: normal;
+   text-shadow: none;
+}
+
+.user-css .tl-heading .history-category-name {
+   display: none;
+}
+
+.timeline li p,
+.timeline li .timeline-panel p, /* The event body/description of the event. */
+.user-css .timeline li .milestone-panel p {
+   font-family: Oxanium, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+   color: rgba(255, 255, 255, 1.0);
+
+   line-height: 1.5;
+}
+
+.user-css .timeline li a {
+   font-family: Oxanium, sans-serif;
+   font-style: italic;
+   color: rgba(0, 255, 255, 0.5);
+   opacity: 0.8;
+
+   transition: 0.15s color, opacity; /* Brighten text when hovered. */
+}
+
+.user-css .timeline li a:hover {
+   color: rgba(0, 255, 255, 1.0);
+   opacity: 1.0;
+}
+/* Timeline panels. */
+
+
+/* Milestone panels. */
+.user-css .milestone-panel { /* The primary container for milestone events. */
+   background: rgba(18, 25, 44, 0.5);
+   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1.0);
+   border: 4px solid rgba(0, 255, 255, 0.75);
+}
+
+.user-css .milestone-panel .tl-section { /* Container wrapping all content inside of the milestone panel. */
+   padding: 15px;
+}
+
+.user-css .milestone-panel .history-title { /* Milestone title. */
+   text-align: center;
+}
+
+.user-css .timeline .timeline-entry-milestone,
+.timeline .milestone { /* Some parent containers that cause inheritance issues. */
+   background: none;
+   border: unset;
+
+   color: unset;
+}
+/* Milestone panels. */
 
 /* -------------------------- */
 /* -----   Timelines   ------ */
 /* -------------------------- */
 
-
-
-
-/*.user-css.page-followers .follower-box{   !*the box with with the followers name and picture*!*/
-/*   background: rgba(0, 255, 255, .15);*/
-/*   border: 4px solid rgba(0,255,255,.4);*/
-/*   box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);*/
-/*   border-radius: 4px;*/
-/*   color: rgba(0, 255, 255, .7);*/
-/*   text-shadow: 0px 3px 3px rgba(0, 102, 102, .8);*/
-/*   font-family: "Expletus Sans";*/
-/*font-style: italic;*/
-/*   font-size: 20px;*/
-/*}*/
-/*!* Follower Page *!*/
-
-
-
-/*!* Tooltip *!*/
-/*!*honestly, i have no idea how this actually works. i just keep trying stuff until eventually it looks good. forgive me.*!*/
-/*.user-css .tooltip.top .tooltip-arrow,*/
-/*.user-css-extended .tooltip.top .tooltip-arrow,*/
-/*.user-css-worldmenu .tooltip.top .tooltip-arrow {*/
-/*   border-top-color: rgba(0, 155, 155, .6);*/
-/*}*/
-
-/*.user-css .tooltip.left .tooltip-arrow,*/
-/*.user-css-extended .tooltip.left .tooltip-arrow,*/
-/*.user-css-worldmenu .tooltip.left .tooltip-arrow {*/
-/*   border-top-color: rgba(0, 155, 155, .6);*/
-/*}*/
-
-/*.user-css .tooltip.bottom .tooltip-arrow,*/
-/*.user-css-extended .tooltip.bottom .tooltip-arrow,*/
-/*.user-css-worldmenu .tooltip.bottom .tooltip-arrow {*/
-/*   border-top-color: rgba(0, 155, 155, .6);*/
-/*}*/
-
-/*.user-css .tooltip.right .tooltip-arrow,*/
-/*.user-css-extended .tooltip.right .tooltip-arrow,*/
-/*.user-css-worldmenu .tooltip.right .tooltip-arrow {*/
-/*   border-top-color: rgba(0, 155, 155, .6);*/
-/*}*/
-
-/*.user-css .tooltip .tooltip-inner,*/
-/*.user-css-extended .tooltip .tooltip-inner,*/
-/*.user-css-worldmenu .tooltip .tooltip-inner {*/
-/*   background: rgba(0, 80, 80, 1);*/
-/*   border-color: rgba(0, 155, 155, .0);*/
-/*   border: solid 2px;*/
-/*   color: rgba(0, 255, 255, .7);*/
-/*   font-size: 20px;*/
-/*   font-family: "Expletus Sans";*/
-/*font-style: italic;*/
-/*}*/
-
-/*.user-css .text-abbreviation {*/
-/*   border: 1px rgba(0,255,255,.6) solid;*/
-/*   padding-left: 2px;*/
-/*   padding-right: 2px;*/
-/*   background: rgba(0,155,155,.2);*/
-/*}*/
-
-/*.user-css-presentation .tooltipster-box {*/
-/*   background: rgba(0,100,100,.8)!important;*/
-/*   border-color: rgba(0, 255, 255, .4)!important;*/
-/*   border: solid 2px!important;*/
-/*   color: rgba(0, 255, 255, .4)!important;*/
-/*}*/
-
-/*.user-css-presentation .tooltipster-content{*/
-/*   color: rgba(0, 255, 255, .8)!important;*/
-/*   font-family: "Expletus Sans";*/
-/*font-style: italic;*/
-/*   font-size: 16px;*/
-/*   line-height: 1.3;*/
-/*}*/
-
-/*.user-css-presentation .tooltipster-arrow-border{*/
-/*   border-top-color: rgba(0, 255, 255, .4)!important;*/
-/*}*/
-/*!* Tooltip *!*/
 
 
 /*!* Fancy border *!*/
