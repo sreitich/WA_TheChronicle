@@ -279,7 +279,7 @@
    opacity: 1.0;
 
    /* Border. */
-   border-radius: 10px;
+   border-radius: 5px;
    box-shadow: 0 0 2px 0 rgba(0, 255, 255, 1.0),
                0 0 4px 2px rgba(50, 255, 255, 0.75),
                0 0 8px 4px rgba(50, 100, 255, 0.75);
@@ -519,6 +519,33 @@
 /* Icons. */
 
 
+/* Buttons. */
+.btn-primary, /* Normal buttons, like "edit article." */
+.btn-danger { /* "Dangerous" buttons, like "delete article." */
+   background: rgba(0, 127, 127, 0.5);
+   border-color: rgba(0, 0, 0, 1.0);
+}
+
+.btn-primary:hover,
+.btn-danger:hover { /* Buttons while being hovered. */
+   background: rgba(0, 255, 255, 0.75);
+   border-color: rgba(0, 0, 0, 1.0);
+}
+
+.btn-primary:active,
+.btn-danger:active { /* Buttons while being pressed. */
+   background: rgba(0, 127, 127, 0.25);
+   border-color: rgba(0, 0, 0, 1.0);
+}
+
+.btn-danger:active:focus { /* Danger buttons after being pressed, while waiting for confirmation for an action (e.g.
+                              "are you sure you want to delete this article?"). */
+   background: rgba(0, 127, 127, 0.25);
+   border-color: rgba(0, 0, 0, 1.0);
+}
+/* Buttons. */
+
+
 /* Horizontal rule. */
 .user-css hr{
    border-top: 2px solid;
@@ -534,7 +561,7 @@
 
 .user-css-presentation .page::-webkit-scrollbar-track { /* Track that the bar scrolls along. */
    background: rgba(0, 255, 255, 0.15);
-   border-radius: 10px;
+   border-radius: 5px;
 
    margin-top: 25px;
    margin-bottom: 25px;
@@ -542,7 +569,7 @@
 
 .user-css-presentation .page::-webkit-scrollbar-thumb { /* The bar that moves across the track (the thumb). */
    background: rgba(0, 255, 255, 0.3);
-   border-radius: 10px;
+   border-radius: 5px;
 }
 
 .user-css-presentation .page::-webkit-scrollbar-thumb:hover { /* The thumb when hovered over. */
@@ -618,10 +645,9 @@
 
 
 /* World codex. */
-.user-css .world-content .world-menu {
-   background-color: rgba(9, 12.5, 22, 0.5);
-   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-   backdrop-filter: blur(10px);
+.user-css .world-content .world-menu { /* World codex container. */
+   background: rgba(18, 25, 44, 0.5);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
 
    padding: 15px 30px;
    border-radius: 5px;
@@ -654,6 +680,13 @@
 /* World codex. */
 
 
+/* Category list. This is only displayed while navigating the world codex. */
+.user-css .category-header p { /* The description of the selected category. */
+   margin: 10px 0;
+}
+/* Category list. */
+
+
 /* Recent articles. */
 .user-css .world-content .world-recent-articles h2 { /* Recent articles header. */
    font-family: Expletus Sans, sans-serif;
@@ -677,8 +710,6 @@
    padding-top: 15px;
    padding-bottom: 10px;
 }
-
-
 /* Timelines list. */
 
 
@@ -946,6 +977,66 @@
 
 /* -------------------------- */
 /* ------   Articles   ------ */
+/* -------------------------- */
+
+
+
+/* -------------------------- */
+/* -----   Timelines   ------ */
+/* -------------------------- */
+
+/* Timeline heading. */
+.user-css .timeline-header { /* Header/title. */
+   line-height: 1.25em;
+}
+
+.user-css .page-timeline .subheading { /* Subheading/description. */
+}
+
+.user-css .timeline-go-to-start { /* The "Go to the beginning" button. I'm hiding this just because this actually skips
+                                     to the end of the timeline, which I guess is like the beginning of the world's
+                                     "current" time, but I just think it's confusing. */
+   display: none;
+}
+/* Timeline header. */
+
+
+/* Time line (like, the LITERAL line that goes down the page; English is stupid). */
+.user-css .timeline:before { /* The line itself. */
+   background-color: rgba(0, 127, 127, 0.5);
+   box-shadow: 0 0 2px 0.5px rgba(0, 127, 127, 1.0),
+               0 0 2px 1px rgba(25, 127, 127, 0.75),
+               0 0 2px 1.5px rgba(25, 50, 127, 0.75);
+   border-radius: 5px;
+}
+
+.user-css .timeline li .tl-circ { /* Icons on the timeline that represent an event and its impact (e.g. "Major"). */
+   background-color: rgba(0, 127, 127, 1.0);
+   border-color: rgba(0, 255, 255, 1.0);
+   border-width: 1px;
+   border-radius: 1px;
+   box-shadow: 0 0 2px 0.5px rgba(0, 255, 255, 1.0),
+               0 0 2px 1px rgba(50, 255, 255, 0.75),
+               0 0 2px 1.5px rgba(50, 100, 255, 0.75);
+}
+/* Time line. */
+
+
+/* Timeline panels. These are the panels that most timeline events are displayed on. */
+.user-css .timeline li .timeline-panel { /* The outermost container. */
+   background: rgba(18, 25, 44, 0.5);
+   border-top-color: rgba(50, 255, 255, 0.75);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+
+   color: rgba(255, 255, 255, 1.0);
+}
+
+.user-css .tl-heading .header-icon { /* The icon for the event, which displays a symbol representing the type of event it is. */
+   
+}
+
+/* -------------------------- */
+/* -----   Timelines   ------ */
 /* -------------------------- */
 
 
