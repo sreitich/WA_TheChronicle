@@ -269,7 +269,7 @@
 .user-css-extended .page {
    /* Background. */
    width: 75vw;
-   max-height: 800px;
+   max-height: 1000px;
    background-size: cover;
    background-clip: padding-box;
    background: rgba(18, 25, 44, 0.85) center;
